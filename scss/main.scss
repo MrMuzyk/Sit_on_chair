@@ -238,10 +238,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
           height: 100%;
           margin-bottom: 0;
 
-          :last-child{
-            justify-content: flex-end;
-          }
-
           .title{
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -264,6 +260,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
             margin-top: 20px;
             p{
               border: 1px solid lightgrey;
+            }
+
+            .empty{
+            	opacity: 0;
             }
           }
           button{
