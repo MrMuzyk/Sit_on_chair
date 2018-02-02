@@ -2,7 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+
 }
+
+$mainColor: #2BB6A1;
 
 .container{
   width: 90%;
@@ -19,6 +25,10 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1;
+    span{
+      color: $mainColor;
+      font-weight: bold;
+    }
 }
 nav div{
     height: 40px;
@@ -41,11 +51,12 @@ nav div div{
 //Sekcja ze sliderem
 
 .section-two{
-  background: rgb(252,255,244); /* Old browsers */
-background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 40%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 40%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcfcfc+0,f9f9f9+0,fcfcfc+1,f9f9f9+1,fafafa+22,f7f7f7+24,f7f7f7+44,f1f1f3+64,efeff1+64,eeeef0+67,ebebed+68,ebebed+70,e6e6e8+73,e8e7ed+73,e2e1e7+77,e2e1e7+80,dfdee4+81,dfdee4+83,dbdae0+84,d9d8de+89,d5d4da+91,d6d5db+92,d2d1d9+94,d3d2da+95,d0d0d8+99,cacad2+100 */
+  background: rgb(252,252,252); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(252,252,252,1) 0%, rgba(249,249,249,1) 0%, rgba(252,252,252,1) 1%, rgba(249,249,249,1) 1%, rgba(250,250,250,1) 22%, rgba(247,247,247,1) 24%, rgba(247,247,247,1) 44%, rgba(241,241,243,1) 64%, rgba(239,239,241,1) 64%, rgba(238,238,240,1) 67%, rgba(235,235,237,1) 68%, rgba(235,235,237,1) 70%, rgba(230,230,232,1) 73%, rgba(232,231,237,1) 73%, rgba(226,225,231,1) 77%, rgba(226,225,231,1) 80%, rgba(223,222,228,1) 81%, rgba(223,222,228,1) 83%, rgba(219,218,224,1) 84%, rgba(217,216,222,1) 89%, rgba(213,212,218,1) 91%, rgba(214,213,219,1) 92%, rgba(210,209,217,1) 94%, rgba(211,210,218,1) 95%, rgba(208,208,216,1) 99%, rgba(202,202,210,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(252,252,252,1) 0%,rgba(249,249,249,1) 0%,rgba(252,252,252,1) 1%,rgba(249,249,249,1) 1%,rgba(250,250,250,1) 22%,rgba(247,247,247,1) 24%,rgba(247,247,247,1) 44%,rgba(241,241,243,1) 64%,rgba(239,239,241,1) 64%,rgba(238,238,240,1) 67%,rgba(235,235,237,1) 68%,rgba(235,235,237,1) 70%,rgba(230,230,232,1) 73%,rgba(232,231,237,1) 73%,rgba(226,225,231,1) 77%,rgba(226,225,231,1) 80%,rgba(223,222,228,1) 81%,rgba(223,222,228,1) 83%,rgba(219,218,224,1) 84%,rgba(217,216,222,1) 89%,rgba(213,212,218,1) 91%,rgba(214,213,219,1) 92%,rgba(210,209,217,1) 94%,rgba(211,210,218,1) 95%,rgba(208,208,216,1) 99%,rgba(202,202,210,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(252,252,252,1) 0%,rgba(249,249,249,1) 0%,rgba(252,252,252,1) 1%,rgba(249,249,249,1) 1%,rgba(250,250,250,1) 22%,rgba(247,247,247,1) 24%,rgba(247,247,247,1) 44%,rgba(241,241,243,1) 64%,rgba(239,239,241,1) 64%,rgba(238,238,240,1) 67%,rgba(235,235,237,1) 68%,rgba(235,235,237,1) 70%,rgba(230,230,232,1) 73%,rgba(232,231,237,1) 73%,rgba(226,225,231,1) 77%,rgba(226,225,231,1) 80%,rgba(223,222,228,1) 81%,rgba(223,222,228,1) 83%,rgba(219,218,224,1) 84%,rgba(217,216,222,1) 89%,rgba(213,212,218,1) 91%,rgba(214,213,219,1) 92%,rgba(210,209,217,1) 94%,rgba(211,210,218,1) 95%,rgba(208,208,216,1) 99%,rgba(202,202,210,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#cacad2',GradientType=0 ); /* IE6-9 */
 }
 
 .slider{
@@ -75,12 +86,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
+    h1{
+          text-transform: uppercase;
+          span{
+            color: $mainColor;
+          }
+    }
+
+
     h1, p{
       padding-bottom: 20px;
       text-align: center;
     }
     button{
-
+      background-color: #2BB6A1;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 7px;
+      padding: 10px 80px;
+      border: 1px solid $mainColor;
     }
   }
 
@@ -91,6 +115,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
      position: absolute;
      top: 50%;
      margin-top: -31px;
+     color: $mainColor;
   }
 
   .prev{
@@ -141,9 +166,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
         background-color: rgba(255,255,255,0.3);
       }
   .chair-text, .chair-baby-text, .description-header{
-        width: 35%;
-        border-bottom: 5px solid black;
+        width: 40%;
+        border-bottom: 5px solid #2BB6A1;
         margin-left: 20px;
+        span{
+          text-transform: uppercase;
+        }
       }
 
   .chair-baby{
@@ -182,6 +210,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
   }
 }
 
+.section-four{
+  background-color: rgb(241,241,241);
+}
+
 
 //Sekcja z cenami
 .prices{
@@ -189,9 +221,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
   flex-direction: column;
   .header{
     width: 30%;
-    border-bottom: 5px solid black;
+    border-bottom: 5px solid #2BB6A1;
     margin-bottom: 50px;
     margin-top: 20px;
+    h1{
+      text-transform: uppercase;
+    }
   }
   .plans{
     display: flex;
@@ -208,6 +243,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
       flex-direction: column;
       align-items: center;
       border: 1px solid lightgrey;
+      background-color: white;
 
 
       .outer-circle{
@@ -238,29 +274,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
           height: 100%;
           margin-bottom: 0;
 
+
           .title{
             text-transform: uppercase;
             margin-bottom: 20px;
             margin-top: 20px;
+            color: $mainColor;
+            font-size: 20px;
           }
           .price{
             border: 1px solid lightgrey;
             border-radius: 50%;
             height: 100px;
             width: 100px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 20px;
             margin-top: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(195,195,195);
+            padding-top: 25px;
+            span{
+              font-size: 25px;
+            }
+            sup{
+              font-size: smaller;
+              vertical-align: super;
+            }
           }
           .service{
             width: 100%;
             margin-bottom: 20px;
             margin-top: 20px;
             p{
-              border: 1px solid lightgrey;
+              line-height: 30px;
             }
+
+            p:nth-child(2){
+              background-color: rgb(241,241,241);
+            }
+            p:nth-child(1){
+              background-color: rgb(228,228,228);
+            }
+            p:nth-child(3){
+              background-color: rgb(228,228,228);
+            }
+
+            p:nth-child(4){
+              background-color: rgb(241,241,241);
+            }
+
 
             .empty{
             	opacity: 0;
@@ -269,12 +331,213 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', end
           button{
             margin-bottom: 20px;
             margin-top: 20px;
+            background-color: #2BB6A1;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 7px;
+            padding: 10px 80px;
+            border: 1px solid $mainColor;
           }
         }
     }
     .standard{
       margin-left: 20px;
       margin-right: 20px;
+      background-color: $mainColor;
+      .outer-circle{
+        background-color: $mainColor;
+        border: 1px solid $mainColor;
+        .inner-circle{
+          background-color: white;
+        }
+      }
+      .content{
+        .title{
+          color: white;
+        }
+        .service{
+        p:nth-child(2){
+          background-color: rgb(241,241,241);
+        }
+        p:nth-child(1){
+          background-color: white;
+        }
+        p:nth-child(3){
+          background-color: white;
+          }
+        }
+        .price{
+          background-color: white;
+          color: $mainColor;
+        }
+      }
+      .join{
+        button{
+          background-color: white;
+          color: $mainColor;
+        }
+      }
+    }
+  }
+}
+
+//Sekcja z formularzem
+
+.contact{
+  .header{
+    width: 30%;
+    border-bottom: 5px solid #2BB6A1;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+
+  form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .left-container, .right-container{
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+    .left-container{
+      width: 60%;
+      margin-right: 50px;
+      input::placeholder{
+        font-size: 20px;
+        color: rgb(180,180,180);
+      }
+      input{
+        margin-top: 20px;
+      }
+      input[name=name]{
+        line-height: 30px;
+        border: 1px solid $mainColor;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+      input[name=email]{
+        line-height: 30px;
+        border: 1px solid $mainColor;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+      textarea{
+        margin-top: 20px;
+        resize: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 1px solid $mainColor;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+      textarea::placeholder{
+        color: rgb(180,180,180);
+        font-size: 20px;
+      }
+    }
+    .right-container{
+      width: 40%;
+      display: flex;
+      align-items: center;
+      .red-chair{
+        background-repeat: no-repeat;
+        background-image: url('../images/red_chair.png');
+        background-position: center;
+        width: 100%;
+        height: 210px;
+      }
+      .agree{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: rgb(160,160,160);
+          .checkbox{
+            background-repeat: no-repeat;
+            background-image: url('../images/form_ok.jpg');
+            background-position: center;
+            width: 48px;
+            height: 40px;
+            border: 1px solid lightgrey;
+            margin-right: 20px;
+          }
+          .accept{
+            width: 100%;
+          }
+        }
+        input{
+          background-color: #2BB6A1;
+          color: white;
+          text-transform: uppercase;
+          border-radius: 7px;
+          padding: 10px 80px;
+          border: 1px solid $mainColor;
+        }
+    }
+  }
+}
+
+
+//Sekcja z footerem
+
+footer{
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .rights{
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(160,160,160);
+  }
+  .logos{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    .flickr{
+      background-repeat: no-repeat;
+      background-image: url('../images/flickr.png');
+      background-position: center;
+      height: 35px;
+      width: 35px;
+      margin-right: 5px;
+      }
+      .vimeo{
+        background-repeat: no-repeat;
+        background-image: url('../images/vimeo.png');
+        background-position: center;
+        height: 35px;
+        width: 35px;
+        margin-right: 5px;
+      }
+      .pinterest{
+        background-repeat: no-repeat;
+        background-image: url('../images/pinterest.png');
+        background-position: center;
+        height: 35px;
+        width: 35px;
+        margin-right: 5px;
+      }
+      .twitter{
+        background-repeat: no-repeat;
+        background-image: url('../images/twitter.png');
+        background-position: center;
+        height: 35px;
+        width: 35px;
+        margin-right: 100px;
+      }
+  }
+  .company-name{
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgb(160,160,160);
+    text-transform: uppercase;
+    span{
+      font-weight: bold;
     }
   }
 }
